@@ -28,8 +28,6 @@ class Settings(BaseSettings):
     langfuse_host: str = "https://cloud.langfuse.com"
 
     hf_token: SecretStr | None = None
-    hf_snapshot_repo: str = "passivelyironic/casefile-cfpb-snapshot"
-    hf_snapshot_revision: str = ""
 
     casefile_seed: int = 42
     log_level: str = "INFO"

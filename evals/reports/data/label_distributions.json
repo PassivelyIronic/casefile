@@ -1,0 +1,398 @@
+{
+  "monetary_relief_rate": {
+    "checking_savings": {
+      "golden": 0.3,
+      "population": 0.1361
+    },
+    "credit_card": {
+      "golden": 0.3,
+      "population": 0.1879
+    },
+    "credit_reporting": {
+      "golden": 0.3,
+      "population": 0.0016
+    },
+    "debt_collection": {
+      "golden": 0.3,
+      "population": 0.005
+    }
+  },
+  "population": {
+    "after_dedupe": 1439206,
+    "checking_savings": {
+      "company_response": {
+        "Closed with explanation": 98313,
+        "Closed with monetary relief": 16662,
+        "Closed with non-monetary relief": 7384,
+        "Untimely response": 90
+      },
+      "issue": {
+        "Closing an account": 17320,
+        "Credit monitoring or identity theft protection services": 57,
+        "Improper use of your report": 96,
+        "Incorrect information on your report": 194,
+        "Managing an account": 67567,
+        "Opening an account": 10257,
+        "Problem caused by your funds being low": 11063,
+        "Problem with a company's investigation into an existing problem": 190,
+        "Problem with a lender or other company charging your account": 15616,
+        "Problem with fraud alerts or security freezes": 81,
+        "Unable to get your credit report or credit score": 8
+      },
+      "n": 122449,
+      "n_raw": 126901
+    },
+    "credit_card": {
+      "company_response": {
+        "Closed with explanation": 78753,
+        "Closed with monetary relief": 21776,
+        "Closed with non-monetary relief": 15291,
+        "In progress": 1,
+        "Untimely response": 76
+      },
+      "issue": {
+        "Advertising and marketing, including promotional offers": 6096,
+        "Closing your account": 9393,
+        "Credit monitoring or identity theft protection services": 278,
+        "Fees or interest": 13415,
+        "Getting a credit card": 14785,
+        "Improper use of your report": 1136,
+        "Incorrect information on your report": 4873,
+        "Other features, terms, or problems": 14708,
+        "Problem when making payments": 8344,
+        "Problem with a company's investigation into an existing problem": 3632,
+        "Problem with a purchase shown on your statement": 32113,
+        "Problem with fraud alerts or security freezes": 122,
+        "Struggling to pay your bill": 1556,
+        "Trouble using your card": 5383,
+        "Unable to get your credit report or credit score": 63
+      },
+      "n": 115897,
+      "n_raw": 128968
+    },
+    "credit_reporting": {
+      "company_response": {
+        "": 4,
+        "Closed with explanation": 588819,
+        "Closed with monetary relief": 1599,
+        "Closed with non-monetary relief": 423807,
+        "In progress": 16,
+        "Untimely response": 1219
+      },
+      "issue": {
+        "Advertising and marketing, including promotional offers": 1,
+        "Confusing or misleading advertising or marketing": 230,
+        "Confusing or missing disclosures": 205,
+        "Credit monitoring or identity theft protection services": 7289,
+        "Dealing with your lender or servicer": 1,
+        "Excessive fees": 61,
+        "Fraud or scam": 447,
+        "Getting a credit card": 1,
+        "Getting a loan": 3,
+        "Getting a loan or lease": 2,
+        "Improper use of your report": 295278,
+        "Incorrect information on your report": 472412,
+        "Other features, terms, or problems": 2,
+        "Problem with a company's investigation into an existing problem": 223528,
+        "Problem with a purchase shown on your statement": 2,
+        "Problem with customer service": 186,
+        "Problem with fraud alerts or security freezes": 6244,
+        "Struggling to pay your loan": 1,
+        "Struggling to repay your loan": 1,
+        "Trouble during payment process": 2,
+        "Trouble using your card": 1,
+        "Unable to get your credit report or credit score": 9396,
+        "Unexpected or other fees": 171
+      },
+      "n": 1015464,
+      "n_raw": 2125969
+    },
+    "debt_collection": {
+      "company_response": {
+        "Closed with explanation": 149621,
+        "Closed with monetary relief": 929,
+        "Closed with non-monetary relief": 33450,
+        "In progress": 4,
+        "Untimely response": 1392
+      },
+      "issue": {
+        "Attempts to collect debt not owed": 85885,
+        "Communication tactics": 13548,
+        "Electronic communications": 3503,
+        "False statements or representation": 25314,
+        "Threatened to contact someone or share information improperly": 3416,
+        "Took or threatened to take negative or legal action": 19377,
+        "Written notification about debt": 34353
+      },
+      "n": 185396,
+      "n_raw": 237590
+    },
+    "eligible_rows": 2619428
+  },
+  "snapshot": {
+    "date_window": [
+      "2022-01-01",
+      "2025-12-31"
+    ],
+    "issue_taxonomy": {
+      "checking_savings": [
+        "Managing an account",
+        "Closing an account",
+        "Problem with a lender or other company charging your account",
+        "Problem caused by your funds being low",
+        "Opening an account"
+      ],
+      "credit_card": [
+        "Problem with a purchase shown on your statement",
+        "Getting a credit card",
+        "Other features, terms, or problems",
+        "Fees or interest",
+        "Closing your account",
+        "Problem when making payments",
+        "Advertising and marketing, including promotional offers",
+        "Trouble using your card"
+      ],
+      "credit_reporting": [
+        "Incorrect information on your report",
+        "Improper use of your report",
+        "Problem with a company's investigation into an existing problem"
+      ],
+      "debt_collection": [
+        "Attempts to collect debt not owed",
+        "Written notification about debt",
+        "False statements or representation",
+        "Took or threatened to take negative or legal action",
+        "Communication tactics"
+      ]
+    },
+    "source_archive": {
+      "item": "fed-archive-cfpb-combined-2026",
+      "sha1_archive_org": "0a25e26f0d72d32f2b4868f0bb4fb345e0109f29",
+      "sha256": "35d4c0954b1ea59e72c563319424cf99cbd9d3f9fe7311df956ce01057bed751",
+      "url": "https://archive.org/download/fed-archive-cfpb-combined-2026/complaints.csv.zip"
+    },
+    "verification": {
+      "field_match_rate": {
+        "company": 0.9966,
+        "company_response": 0.9999,
+        "date_received": 1.0,
+        "issue_raw": 1.0,
+        "product_raw": 1.0,
+        "timely": 1.0
+      },
+      "found_in_official": 33593,
+      "found_rate": 0.9998,
+      "pool_size": 33600
+    }
+  },
+  "split_sizes": {
+    "golden": 200,
+    "history": 20000,
+    "train": 10000
+  },
+  "splits": {
+    "golden": {
+      "company_response": {
+        "checking_savings": {
+          "Closed with explanation": 33,
+          "Closed with monetary relief": 15,
+          "Closed with non-monetary relief": 2
+        },
+        "credit_card": {
+          "Closed with explanation": 29,
+          "Closed with monetary relief": 15,
+          "Closed with non-monetary relief": 6
+        },
+        "credit_reporting": {
+          "Closed with explanation": 21,
+          "Closed with monetary relief": 15,
+          "Closed with non-monetary relief": 14
+        },
+        "debt_collection": {
+          "Closed with explanation": 29,
+          "Closed with monetary relief": 15,
+          "Closed with non-monetary relief": 6
+        }
+      },
+      "issue": {
+        "checking_savings": {
+          "Closing an account": 3,
+          "Managing an account": 27,
+          "Opening an account": 6,
+          "Problem caused by your funds being low": 4,
+          "Problem with a lender or other company charging your account": 10
+        },
+        "credit_card": {
+          "Advertising and marketing, including promotional offers": 3,
+          "Closing your account": 3,
+          "Fees or interest": 7,
+          "Getting a credit card": 2,
+          "Other features, terms, or problems": 4,
+          "Problem when making payments": 2,
+          "Problem with a purchase shown on your statement": 19,
+          "other": 10
+        },
+        "credit_reporting": {
+          "Improper use of your report": 14,
+          "Incorrect information on your report": 22,
+          "Problem with a company's investigation into an existing problem": 7,
+          "other": 7
+        },
+        "debt_collection": {
+          "Attempts to collect debt not owed": 32,
+          "Communication tactics": 4,
+          "False statements or representation": 4,
+          "Took or threatened to take negative or legal action": 4,
+          "Written notification about debt": 5,
+          "other": 1
+        }
+      },
+      "product": {
+        "checking_savings": 50,
+        "credit_card": 50,
+        "credit_reporting": 50,
+        "debt_collection": 50
+      }
+    },
+    "history": {
+      "company_response": {
+        "checking_savings": {
+          "Closed with explanation": 4004,
+          "Closed with monetary relief": 692,
+          "Closed with non-monetary relief": 300,
+          "Untimely response": 4
+        },
+        "credit_card": {
+          "Closed with explanation": 3383,
+          "Closed with monetary relief": 956,
+          "Closed with non-monetary relief": 657,
+          "Untimely response": 4
+        },
+        "credit_reporting": {
+          "Closed with explanation": 2948,
+          "Closed with monetary relief": 8,
+          "Closed with non-monetary relief": 2038,
+          "Untimely response": 6
+        },
+        "debt_collection": {
+          "Closed with explanation": 4074,
+          "Closed with monetary relief": 43,
+          "Closed with non-monetary relief": 842,
+          "In progress": 1,
+          "Untimely response": 40
+        }
+      },
+      "issue": {
+        "checking_savings": {
+          "Closing an account": 703,
+          "Managing an account": 2766,
+          "Opening an account": 410,
+          "Problem caused by your funds being low": 462,
+          "Problem with a lender or other company charging your account": 631,
+          "other": 28
+        },
+        "credit_card": {
+          "Advertising and marketing, including promotional offers": 264,
+          "Closing your account": 375,
+          "Fees or interest": 560,
+          "Getting a credit card": 612,
+          "Other features, terms, or problems": 661,
+          "Problem when making payments": 356,
+          "Problem with a purchase shown on your statement": 1413,
+          "Trouble using your card": 234,
+          "other": 525
+        },
+        "credit_reporting": {
+          "Improper use of your report": 1452,
+          "Incorrect information on your report": 2385,
+          "Problem with a company's investigation into an existing problem": 1048,
+          "other": 115
+        },
+        "debt_collection": {
+          "Attempts to collect debt not owed": 2270,
+          "Communication tactics": 413,
+          "False statements or representation": 697,
+          "Took or threatened to take negative or legal action": 511,
+          "Written notification about debt": 931,
+          "other": 178
+        }
+      },
+      "product": {
+        "checking_savings": 5000,
+        "credit_card": 5000,
+        "credit_reporting": 5000,
+        "debt_collection": 5000
+      }
+    },
+    "train": {
+      "company_response": {
+        "checking_savings": {
+          "Closed with explanation": 2006,
+          "Closed with monetary relief": 342,
+          "Closed with non-monetary relief": 150,
+          "Untimely response": 2
+        },
+        "credit_card": {
+          "Closed with explanation": 1717,
+          "Closed with monetary relief": 442,
+          "Closed with non-monetary relief": 340,
+          "Untimely response": 1
+        },
+        "credit_reporting": {
+          "Closed with explanation": 1463,
+          "Closed with monetary relief": 1,
+          "Closed with non-monetary relief": 1033,
+          "In progress": 1,
+          "Untimely response": 2
+        },
+        "debt_collection": {
+          "Closed with explanation": 2021,
+          "Closed with monetary relief": 4,
+          "Closed with non-monetary relief": 455,
+          "Untimely response": 20
+        }
+      },
+      "issue": {
+        "checking_savings": {
+          "Closing an account": 342,
+          "Managing an account": 1351,
+          "Opening an account": 219,
+          "Problem caused by your funds being low": 249,
+          "Problem with a lender or other company charging your account": 329,
+          "other": 10
+        },
+        "credit_card": {
+          "Advertising and marketing, including promotional offers": 132,
+          "Closing your account": 196,
+          "Fees or interest": 269,
+          "Getting a credit card": 298,
+          "Other features, terms, or problems": 343,
+          "Problem when making payments": 195,
+          "Problem with a purchase shown on your statement": 694,
+          "Trouble using your card": 113,
+          "other": 260
+        },
+        "credit_reporting": {
+          "Improper use of your report": 705,
+          "Incorrect information on your report": 1147,
+          "Problem with a company's investigation into an existing problem": 594,
+          "other": 54
+        },
+        "debt_collection": {
+          "Attempts to collect debt not owed": 1159,
+          "Communication tactics": 189,
+          "False statements or representation": 365,
+          "Took or threatened to take negative or legal action": 256,
+          "Written notification about debt": 448,
+          "other": 83
+        }
+      },
+      "product": {
+        "checking_savings": 2500,
+        "credit_card": 2500,
+        "credit_reporting": 2500,
+        "debt_collection": 2500
+      }
+    }
+  }
+}

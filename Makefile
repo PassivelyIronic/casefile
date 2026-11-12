@@ -1,4 +1,4 @@
-.PHONY: setup up down data index lint typecheck test test-int check eval eval-gate api ui mcp-inspect
+.PHONY: setup up down data corpus index lint typecheck test test-int check eval eval-gate api ui mcp-inspect
 
 setup:
 	uv sync --all-groups
@@ -11,7 +11,10 @@ down:
 	docker compose down
 
 data:
-	@echo "TODO (Phase 1): download pinned snapshot, build eval sets"
+	uv run python -m casefile.data.dataset
+
+corpus:
+	uv run python -m casefile.data.regulations
 
 index:
 	@echo "TODO (Phase 3): embed history corpus + regulations into pgvector"
