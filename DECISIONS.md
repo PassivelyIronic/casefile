@@ -73,15 +73,20 @@ superseded), context, decision, alternatives rejected, consequences.
   loading-script support.
 - **Decision:** A one-off snapshot script downloads the CFPB export and records its sha256,
   `Last-Modified` and download date. It filters to the 4 target products with narratives
-  and publishes parquet to our own HF dataset `passivelyironic/casefile-cfpb-snapshot`
+  and publishes parquet to our own HF dataset `PassivelyIronic/casefile-cfpb-snapshot`
   (CC0 permits redistribution). `make data` loads that dataset at a pinned commit hash
   and verifies file hashes. Small eval files stay committed in `data/eval/`.
 - **Rejected:** (a) Official HF dataset at a pinned revision (does not pin data).
   (b) Re-download the live export with a `Date received` cutoff (narratives are added and
   edited after the fact, so it is not reproducible). (c) Committing the snapshot to git
   (too large).
-- **Consequences:** Needs an HF write token once, at snapshot time. Reproducibility depends
-  on the HF dataset staying public. The source export hash is recorded in the data card.
+- **Consequences:** Needs an HF write token once, at snapshot time. The source export hash
+  is recorded in the data card.
+- **Update 2026-11-12:** The snapshot dataset is **private for now** (owner's decision).
+  `make data` authenticates with `HF_TOKEN`. CI does not need it (offline tests, committed
+  eval files). Until it is made public, third parties cannot rebuild `history` / `train`,
+  and README and the data card must say so. Switching to public does not change the
+  pinned revision.
 
 ## D-008 — Dependency pinning and the `mcp` 1.x constraint
 
@@ -115,3 +120,28 @@ superseded), context, decision, alternatives rejected, consequences.
   (deferred to Phase 8).
 - **Consequences:** Free-tier RPM/RPD limits will bound eval runs. Measure them before
   Phase 6 and record them.
+
+## D-010 — Narrative source: archived CFPB export (March 2026)
+
+- **Date:** 2026-11-12 · **Status:** accepted (owner chose the option in chat)
+- **Context:** The CFPB stopped publishing consumer complaint narratives (announced
+  2026-08-14; removed from the public database in September 2026). The official export
+  downloaded on 2026-11-12 (`complaints.csv.zip`, sha256 `66edecda…`, Last-Modified
+  2026-11-12) has no `Consumer complaint narrative` column, so the source in PLAN.md
+  Phase 1 no longer has the project's input. Narratives were public and CC0 before removal.
+- **Decision:** Use the CFPB export archived on the Internet Archive in item
+  `fed-archive-cfpb-combined-2026` (`complaints.csv.zip`, 1,777,418,049 bytes,
+  sha1 `0a25e26f0d72d32f2b4868f0bb4fb345e0109f29` matching archive.org's listing,
+  sha256 `35d4c0954b1ea59e72c563319424cf99cbd9d3f9fe7311df956ce01057bed751`).
+  It was uploaded by a third party in March 2026, so authenticity is checked: for every
+  complaint in our snapshot, metadata columns (product, issue, company, company response,
+  timely) are compared with the current official export by Complaint ID, and the
+  match rate is reported in the data card. The official export's hash is recorded too.
+  The frozen snapshot is then published privately to HF as in D-007.
+- **Rejected:** Wayback Machine capture of the official URL from 2026-08-15 (best
+  provenance, but downloads at a few KB/s, so 1.4 GB is impractical). archive.org item
+  from Feb 2025 (older, same third-party caveat). Third-party HF mirrors (unknown
+  processing).
+- **Consequences:** Narratives cover complaints up to ~March 2026. README and the data
+  card must explain the CFPB policy change and the archive provenance. If CFPB or the
+  archive item changes, our frozen HF snapshot still holds the data.
