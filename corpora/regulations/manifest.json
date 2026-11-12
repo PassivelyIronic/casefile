@@ -1,0 +1,283 @@
+{
+  "ecfr_date": "2026-11-04",
+  "usc_edition": "2024",
+  "license": "US federal law, public domain (17 U.S.C. 105)",
+  "sections": [
+    {
+      "section_id": "15-USC-1681b",
+      "heading": "\u00a71681b. Permissible purposes of consumer reports",
+      "law": "FCRA",
+      "products": [
+        "credit_reporting"
+      ],
+      "url": "https://www.govinfo.gov/link/uscode/15/1681b?year=2024&link-type=html",
+      "retrieved_at": "2026-11-12",
+      "sha256": "c04a6cbcc61a8cf2630a1eace5303e6a41341d18330872cd49273ea3b33268e0",
+      "file": "15-USC-1681b.md"
+    },
+    {
+      "section_id": "15-USC-1681c-2",
+      "heading": "\u00a71681c\u20132. Block of information resulting from identity theft",
+      "law": "FCRA",
+      "products": [
+        "credit_reporting"
+      ],
+      "url": "https://www.govinfo.gov/link/uscode/15/1681c-2?year=2024&link-type=html",
+      "retrieved_at": "2026-11-12",
+      "sha256": "38445313833fc6b33ad6a2af9c4b9a19bdea674dfceae6d1a6c79b165cadb9c8",
+      "file": "15-USC-1681c-2.md"
+    },
+    {
+      "section_id": "15-USC-1681g",
+      "heading": "\u00a71681g. Disclosures to consumers",
+      "law": "FCRA",
+      "products": [
+        "credit_reporting"
+      ],
+      "url": "https://www.govinfo.gov/link/uscode/15/1681g?year=2024&link-type=html",
+      "retrieved_at": "2026-11-12",
+      "sha256": "133061c4ef9ea955ca3e1c27ed1b06284ea4e5f844ae9416594f24892e1e097b",
+      "file": "15-USC-1681g.md"
+    },
+    {
+      "section_id": "15-USC-1681i",
+      "heading": "\u00a71681i. Procedure in case of disputed accuracy",
+      "law": "FCRA",
+      "products": [
+        "credit_reporting"
+      ],
+      "url": "https://www.govinfo.gov/link/uscode/15/1681i?year=2024&link-type=html",
+      "retrieved_at": "2026-11-12",
+      "sha256": "56c7446b5a094077dbd72a60882459c45da8ef9926fe3935886c461fb0015e97",
+      "file": "15-USC-1681i.md"
+    },
+    {
+      "section_id": "15-USC-1681s-2",
+      "heading": "\u00a71681s\u20132. Responsibilities of furnishers of information to consumer reporting agencies",
+      "law": "FCRA",
+      "products": [
+        "credit_reporting"
+      ],
+      "url": "https://www.govinfo.gov/link/uscode/15/1681s-2?year=2024&link-type=html",
+      "retrieved_at": "2026-11-12",
+      "sha256": "e516444b4b4d898889b752ed891c4b245c7a74ea1df406a7672ef23473b956fa",
+      "file": "15-USC-1681s-2.md"
+    },
+    {
+      "section_id": "12-CFR-1022.43",
+      "heading": "\u00a7 1022.43 Direct disputes.",
+      "law": "Reg V",
+      "products": [
+        "credit_reporting"
+      ],
+      "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-11-04/title-12.xml?part=1022&section=1022.43",
+      "retrieved_at": "2026-11-12",
+      "sha256": "485391b67cad85201ab77e4e5d27ee7224a52f8150ec086279a3d496ce650986",
+      "file": "12-CFR-1022.43.md"
+    },
+    {
+      "section_id": "12-CFR-1006.6",
+      "heading": "\u00a7 1006.6 Communications in connection with debt collection.",
+      "law": "Reg F",
+      "products": [
+        "debt_collection"
+      ],
+      "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-11-04/title-12.xml?part=1006&section=1006.6",
+      "retrieved_at": "2026-11-12",
+      "sha256": "bde462a90fae518c521c1042d3142500c8e906dcf5808ebc49207f540191d7c0",
+      "file": "12-CFR-1006.6.md"
+    },
+    {
+      "section_id": "12-CFR-1006.14",
+      "heading": "\u00a7 1006.14 Harassing, oppressive, or abusive conduct.",
+      "law": "Reg F",
+      "products": [
+        "debt_collection"
+      ],
+      "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-11-04/title-12.xml?part=1006&section=1006.14",
+      "retrieved_at": "2026-11-12",
+      "sha256": "dec602e8e41f3e8160c27a753264f338d7b1c453a979bdb2103085b2ee3375f9",
+      "file": "12-CFR-1006.14.md"
+    },
+    {
+      "section_id": "12-CFR-1006.18",
+      "heading": "\u00a7 1006.18 False, deceptive, or misleading representations or means.",
+      "law": "Reg F",
+      "products": [
+        "debt_collection"
+      ],
+      "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-11-04/title-12.xml?part=1006&section=1006.18",
+      "retrieved_at": "2026-11-12",
+      "sha256": "3487a1ebf8508b191bf1bd0243a9a6298cb0d1e9cf66fbfebfeb50b4b309ff8c",
+      "file": "12-CFR-1006.18.md"
+    },
+    {
+      "section_id": "12-CFR-1006.22",
+      "heading": "\u00a7 1006.22 Unfair or unconscionable means.",
+      "law": "Reg F",
+      "products": [
+        "debt_collection"
+      ],
+      "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-11-04/title-12.xml?part=1006&section=1006.22",
+      "retrieved_at": "2026-11-12",
+      "sha256": "55bf1d6831487c4c4c1ecfab661355e9bf7ee6682e0a0cfc269134861ad10c42",
+      "file": "12-CFR-1006.22.md"
+    },
+    {
+      "section_id": "12-CFR-1006.30",
+      "heading": "\u00a7 1006.30 Other prohibited practices.",
+      "law": "Reg F",
+      "products": [
+        "debt_collection"
+      ],
+      "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-11-04/title-12.xml?part=1006&section=1006.30",
+      "retrieved_at": "2026-11-12",
+      "sha256": "26bc91d71b38ec763336cf1bd032b471246f9cc11ecffba108ac6ca53b057a68",
+      "file": "12-CFR-1006.30.md"
+    },
+    {
+      "section_id": "12-CFR-1006.34",
+      "heading": "\u00a7 1006.34 Notice for validation of debts.",
+      "law": "Reg F",
+      "products": [
+        "debt_collection"
+      ],
+      "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-11-04/title-12.xml?part=1006&section=1006.34",
+      "retrieved_at": "2026-11-12",
+      "sha256": "9ca66e5b236cedb2233d1677aa441e1626fc593598780a6ba9b2600911ca2379",
+      "file": "12-CFR-1006.34.md"
+    },
+    {
+      "section_id": "12-CFR-1006.38",
+      "heading": "\u00a7 1006.38 Disputes and requests for original-creditor information.",
+      "law": "Reg F",
+      "products": [
+        "debt_collection"
+      ],
+      "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-11-04/title-12.xml?part=1006&section=1006.38",
+      "retrieved_at": "2026-11-12",
+      "sha256": "6d4a76b672e4f03aa3334e8701b79c112281c94b3a2179992b8eebc195ba8379",
+      "file": "12-CFR-1006.38.md"
+    },
+    {
+      "section_id": "12-CFR-1026.9",
+      "heading": "\u00a7 1026.9 Subsequent disclosure requirements.",
+      "law": "Reg Z",
+      "products": [
+        "credit_card"
+      ],
+      "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-11-04/title-12.xml?part=1026&section=1026.9",
+      "retrieved_at": "2026-11-12",
+      "sha256": "bf06a058aeea8cce3ee20c28ba24c5d1ae18c49324dbf527857ef69d4dce4b57",
+      "file": "12-CFR-1026.9.md"
+    },
+    {
+      "section_id": "12-CFR-1026.12",
+      "heading": "\u00a7 1026.12 Special credit card provisions.",
+      "law": "Reg Z",
+      "products": [
+        "credit_card"
+      ],
+      "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-11-04/title-12.xml?part=1026&section=1026.12",
+      "retrieved_at": "2026-11-12",
+      "sha256": "fa1c3a1de4c9d83ccf671be2822bbeefe9fbbf22c7dcbc301021ced5039fcb9c",
+      "file": "12-CFR-1026.12.md"
+    },
+    {
+      "section_id": "12-CFR-1026.13",
+      "heading": "\u00a7 1026.13 Billing error resolution.",
+      "law": "Reg Z",
+      "products": [
+        "credit_card"
+      ],
+      "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-11-04/title-12.xml?part=1026&section=1026.13",
+      "retrieved_at": "2026-11-12",
+      "sha256": "62e2ae59ccc2f5e5a5e4c8405510b363980641966ef58c1860411755ae66848e",
+      "file": "12-CFR-1026.13.md"
+    },
+    {
+      "section_id": "12-CFR-1026.52",
+      "heading": "\u00a7 1026.52 Limitations on fees.",
+      "law": "Reg Z",
+      "products": [
+        "credit_card"
+      ],
+      "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-11-04/title-12.xml?part=1026&section=1026.52",
+      "retrieved_at": "2026-11-12",
+      "sha256": "b699dd392a8d380a5077e94e2d53bba97da5daca9eda27a54bf69df41186aa5b",
+      "file": "12-CFR-1026.52.md"
+    },
+    {
+      "section_id": "12-CFR-1026.55",
+      "heading": "\u00a7 1026.55 Limitations on increasing annual percentage rates, fees, and charges.",
+      "law": "Reg Z",
+      "products": [
+        "credit_card"
+      ],
+      "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-11-04/title-12.xml?part=1026&section=1026.55",
+      "retrieved_at": "2026-11-12",
+      "sha256": "76ea7bddbd5facf520ee157630f1d24b1585b08a4921381089b041b50f669786",
+      "file": "12-CFR-1026.55.md"
+    },
+    {
+      "section_id": "12-CFR-1005.6",
+      "heading": "\u00a7 1005.6 Liability of consumer for unauthorized transfers.",
+      "law": "Reg E",
+      "products": [
+        "checking_savings"
+      ],
+      "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-11-04/title-12.xml?part=1005&section=1005.6",
+      "retrieved_at": "2026-11-12",
+      "sha256": "dd2f2e3057c875bc81dd68d637248d309aac27c6a7e2ad04e29673dfa3a0770c",
+      "file": "12-CFR-1005.6.md"
+    },
+    {
+      "section_id": "12-CFR-1005.11",
+      "heading": "\u00a7 1005.11 Procedures for resolving errors.",
+      "law": "Reg E",
+      "products": [
+        "checking_savings"
+      ],
+      "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-11-04/title-12.xml?part=1005&section=1005.11",
+      "retrieved_at": "2026-11-12",
+      "sha256": "0910073ea10b208428b8ce7072386d0cb1a8b87e8d2767db0e3f7046dd1b1de7",
+      "file": "12-CFR-1005.11.md"
+    },
+    {
+      "section_id": "12-CFR-1005.17",
+      "heading": "\u00a7 1005.17 Requirements for overdraft services.",
+      "law": "Reg E",
+      "products": [
+        "checking_savings"
+      ],
+      "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-11-04/title-12.xml?part=1005&section=1005.17",
+      "retrieved_at": "2026-11-12",
+      "sha256": "e656fcd98468597b8ed5d8dceb7d7ffad355268fac3dc17a43410cbbe96ff262",
+      "file": "12-CFR-1005.17.md"
+    },
+    {
+      "section_id": "12-CFR-1030.4",
+      "heading": "\u00a7 1030.4 Account disclosures.",
+      "law": "Reg DD",
+      "products": [
+        "checking_savings"
+      ],
+      "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-11-04/title-12.xml?part=1030&section=1030.4",
+      "retrieved_at": "2026-11-12",
+      "sha256": "21a6222b6f94e6ef4814a879c35e668e3269a9fb3e32b8768ba711752ff96bab",
+      "file": "12-CFR-1030.4.md"
+    },
+    {
+      "section_id": "12-CFR-1030.5",
+      "heading": "\u00a7 1030.5 Subsequent disclosures.",
+      "law": "Reg DD",
+      "products": [
+        "checking_savings"
+      ],
+      "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-11-04/title-12.xml?part=1030&section=1030.5",
+      "retrieved_at": "2026-11-12",
+      "sha256": "f1dbb0185c740ac849fbddc9dafec36eec0507df955ed74626e735dffd4d5429",
+      "file": "12-CFR-1030.5.md"
+    }
+  ]
+}
