@@ -27,9 +27,16 @@ and the real embedding provider (marked integration).
 
 ## Phase 1 — Data
 
-Source: CFPB Consumer Complaint Database, Hugging Face `CFPB/consumer-finance-complaints`.
+Source: CFPB Consumer Complaint Database bulk export
+(`https://files.consumerfinance.gov/ccdb/complaints.csv.zip`, CC0), frozen into our own
+HF Hub dataset. See D-007: the official HF dataset `CFPB/consumer-finance-complaints`
+is a loading script that fetches the live export, so its revision does not pin data.
 
-- [ ] Loader pinned to an explicit HF dataset **revision** (record the commit hash)
+- [ ] One-off snapshot script: download the CFPB export, record sha256, `Last-Modified`,
+      download date; filter (below); write parquet; publish to HF Hub dataset
+      `passivelyironic/casefile-cfpb-snapshot` (data card included)
+- [ ] `make data` loads the snapshot from an explicit HF **revision** (commit hash
+      pinned in config), verifies file hashes, builds splits
 - [ ] Filter: narrative present; 4 products — credit reporting, credit card,
       debt collection, checking/savings account. Map product names across
       CFPB taxonomy changes over the years (document the mapping)
@@ -178,7 +185,6 @@ Metrics (one module each, unit-tested on hand-made fixtures):
 
 ## Phase 8 — Optional extensions
 
-- [ ] Tenant #2 in `ai-platform` (`service.yaml`, deterministic gate as promotion check)
 - [ ] τ-bench retail as a second eval suite in the same harness
 - [ ] Second chat provider in fallback chain; provider comparison table
 
@@ -198,3 +204,5 @@ Metrics (one module each, unit-tested on hand-made fixtures):
   Redis + blob storage + Postgres exceed hardware budget alongside the app).
 - **D-006** Deterministic gates only; LLM-as-judge observational and human-calibrated.
   Rejected: judge-based gating (run-to-run variance).
+- **D-007** Data snapshot frozen in own HF Hub dataset (added before Phase 0, see
+  DECISIONS.md).
