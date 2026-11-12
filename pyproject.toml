@@ -44,6 +44,7 @@ dev = [
     "pytest-asyncio>=1.4",
     "pre-commit>=4.7",
     "types-pyyaml",
+    "pandas-stubs>=3.1.0.261029",
 ]
 
 [tool.uv]
