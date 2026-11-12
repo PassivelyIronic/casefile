@@ -9,16 +9,16 @@ Scope guard: phases 0–7 are the portfolio-ready core. Phase 8 is optional.
 
 ## Phase 0 — Scaffold
 
-- [ ] `uv init`, Python 3.12, `pyproject.toml` with dependency groups
+- [x] `uv init`, Python 3.12, `pyproject.toml` with dependency groups
       (`core`, `data`, `mcp`, `api`, `ui`, `dev`); pin versions after checking current releases
-- [ ] ruff, mypy, pytest, pre-commit configured
-- [ ] `docker-compose.yml`: Postgres 16 + pgvector (persistent volume)
-- [ ] `config.py` (pydantic-settings) + `.env.example`
-- [ ] Provider abstraction skeleton: `ChatProvider`, `EmbeddingProvider`, fake
+- [x] ruff, mypy, pytest, pre-commit configured
+- [x] `docker-compose.yml`: Postgres 16 + pgvector (persistent volume)
+- [x] `config.py` (pydantic-settings) + `.env.example`
+- [x] Provider abstraction skeleton: `ChatProvider`, `EmbeddingProvider`, fake
       implementations for tests, one real free-tier chat provider, Ollama `bge-m3` embeddings
-- [ ] GitHub Actions: `ci.yml` (ruff + mypy + offline tests) on push/PR
-- [ ] `DECISIONS.md` seeded with D-001…D-006 (see bottom of this file)
-- [ ] Makefile with targets from CLAUDE.md §10 (stubs allowed)
+- [x] GitHub Actions: `ci.yml` (ruff + mypy + offline tests) on push/PR
+- [x] `DECISIONS.md` seeded with D-001…D-006 (see bottom of this file)
+- [x] Makefile with targets from CLAUDE.md §10 (stubs allowed)
 
 **Done when:** `make check` passes in CI; a smoke test calls the fake chat provider
 and the real embedding provider (marked integration).

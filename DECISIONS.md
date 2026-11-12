@@ -82,3 +82,36 @@ superseded), context, decision, alternatives rejected, consequences.
   (too large).
 - **Consequences:** Needs an HF write token once, at snapshot time. Reproducibility depends
   on the HF dataset staying public. The source export hash is recorded in the data card.
+
+## D-008 — Dependency pinning and the `mcp` 1.x constraint
+
+- **Date:** 2026-11-12 · **Status:** accepted
+- **Context:** Phase 0 dependency setup. LangChain / LangGraph / MCP APIs change quickly.
+  `mcp` 2.x is out (2.3.0), but `langchain-mcp-adapters` 0.3.2 (latest) requires
+  `mcp>=1.24,<2`.
+- **Decision:** `uv.lock` pins exact versions. In `pyproject.toml`, fast-moving libraries
+  (`langchain-*`, `langgraph*`, `mcp`, `langchain-mcp-adapters`) use `~=X.Y.Z` (patch
+  updates only) and the rest use `>=X.Y,<next major`. `mcp` stays on `~=1.30.0` until
+  the adapters support 2.x.
+- **Rejected:** `mcp` 2.x without the adapters (would mean writing our own MCP→LangChain
+  tool bridge). Unpinned ranges.
+- **Consequences:** MCP servers are written against the `mcp` 1.30 FastMCP API. Revisit
+  when adapters release 2.x support.
+
+## D-009 — Provider registry and default chat model
+
+- **Date:** 2026-11-12 · **Status:** accepted
+- **Context:** Switching providers must need only an env change, and adding a provider
+  should not need config placeholders for providers nobody uses. The student Google AI
+  Pro plan does not include API access, so the API uses an AI Studio free-tier key.
+- **Decision:** `providers/registry.py` maps provider names to factories
+  (`Settings -> BaseChatModel` / `Embeddings`). Built-ins (`gemini`, `ollama`, `fake`)
+  are lazy import paths. New providers register via `register_chat` /
+  `register_embedding`. Default chat model `gemini-3.5-flash`: `gemini-2.5-flash`
+  returns 404 for new users, and `gemini-3.8-flash` returned 503 (high demand) on
+  2026-11-12. Free-tier quotas are not published in the docs (shown per project in
+  AI Studio).
+- **Rejected:** Pre-declared env vars for every possible provider. Fallback chain now
+  (deferred to Phase 8).
+- **Consequences:** Free-tier RPM/RPD limits will bound eval runs. Measure them before
+  Phase 6 and record them.
