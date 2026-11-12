@@ -1,0 +1,30 @@
+# Claude Code / agent files (kept local, not part of the public repo)
+CLAUDE.md
+.claude/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# Data
+data/raw/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
